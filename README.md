@@ -1,6 +1,7 @@
 # ValuationEngine
 
 O ValuationEngine é um motor de análise quantitativa e fundamentalista desenvolvido em Python para automatizar a seleção de ativos na bolsa brasileira (B3). O sistema processa dados complexos e aplica uma rigorosa triagem matemática para identificar empresas sólidas, em crescimento e negociadas com desconto (Margem de Segurança).
+
 <table>
   <tr>
     <td>
@@ -27,13 +28,9 @@ O investidor pessoa física frequentemente enfrenta a paralisia por análise ou 
 ## ⚙️ Funcionalidades
 
 - Triagem Automatizada: Executa filtros rígidos (Hard Filters) para eliminar empresas com dívidas abusivas, lucros inconsistentes ou prejuízos recorrentes.
-
 - Cálculo de Valor Intrínseco: Utiliza modelos matemáticos para determinar o "preço justo" dos ativos.
-
 - Análise de Eficiência: Processa indicadores como ROE, ROIC e tendências de longo prazo (CAGR de lucros e receitas).
-
 - Ranking de Elite: Classifica as empresas aprovadas por um Score de qualidade (0 a 10).
-
 - Dashboard Interativo: Interface web em tempo real (Streamlit) para visualização de históricos e indicadores.
 
 ## 🏗️ Arquitetura do Sistema
@@ -41,20 +38,16 @@ O investidor pessoa física frequentemente enfrenta a paralisia por análise ou 
 O projeto segue princípios de Clean Architecture, dividindo responsabilidades:
 
 - Fetcher.py: Camada de extração e consumo de dados via API.
-
 - FilterData.py: Motor de regras de negócio (filtros de exclusão).
-
 - Analyser.py: Core matemático (cálculos de valuation e pontuação).
-
 - Dashboard.py: Interface visual intuitiva com gráficos dinâmicos.
-
 - main.py: Orquestrador central de todo o pipeline de dados.
 
 ## 🚀 Como Executar
 
 ### Pré-requisitos
 
-Certifique-se de ter o Python 3.14+ instalado.
+Certifique-se de ter o Python 3.11+ instalado.
 
 ### Passos
 
