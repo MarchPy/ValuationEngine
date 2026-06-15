@@ -1,0 +1,79 @@
+{
+    "statusInvest": {
+        "headers": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "Accept": "application/json, text/plain, */*",
+            "Referer": "https://statusinvest.com.br/acoes/busca-avancada"
+        },
+        "urlTicker": "https://statusinvest.com.br/acoes/",
+        "baseUrlAPI": "https://statusinvest.com.br/category/advancedsearchresultpaginated",
+        "historyIndicatorsAPI": "https://statusinvest.com.br/acao/indicatorhistoricallist",
+        "pagination": {
+            "page": 0,
+            "take": 1000
+        },
+        "orderColumn": "",
+        "isAsc": "",
+        "categoryType": 1,
+        "search": {
+            "Sector": "",
+            "SubSector": "",
+            "Segment": "",
+            "my_range": "-20;100",
+            "forecast": {
+                "upsidedownside": { "Item1": null, "Item2": null },
+                "estimatesnumber": { "Item1": null, "Item2": null },
+                "revisedup": true,
+                "reviseddown": true,
+                "consensus": []
+            },
+            "dy":                             { "Item1": null, "Item2": null },
+            "p_l":                            { "Item1": null, "Item2": null },
+            "peg_ratio":                      { "Item1": null, "Item2": null },
+            "p_vp":                           { "Item1": null, "Item2": null },
+            "p_ativo":                        { "Item1": null, "Item2": null },
+            "margembruta":                    { "Item1": null, "Item2": null },
+            "margemebit":                     { "Item1": null, "Item2": null },
+            "margemliquida":                  { "Item1": null, "Item2": null },
+            "p_ebit":                         { "Item1": null, "Item2": null },
+            "ev_ebit":                        { "Item1": null, "Item2": null },
+            "dividaliquidaebit":              { "Item1": null, "Item2": null },
+            "dividaliquidapatrimonioliquido": { "Item1": null, "Item2": null },
+            "p_sr":                           { "Item1": null, "Item2": null },
+            "p_capitalgiro":                  { "Item1": null, "Item2": null },
+            "p_ativocirculante":              { "Item1": null, "Item2": null },
+            "roe":                            { "Item1": null, "Item2": null },
+            "roic":                           { "Item1": null, "Item2": null },
+            "roa":                            { "Item1": null, "Item2": null },
+            "liquidezcorrente":               { "Item1": null, "Item2": null },
+            "pl_ativo":                       { "Item1": null, "Item2": null },
+            "passivo_ativo":                  { "Item1": null, "Item2": null },
+            "giroativos":                     { "Item1": null, "Item2": null },
+            "receitas_cagr5":                 { "Item1": null, "Item2": null },
+            "lucros_cagr5":                   { "Item1": null, "Item2": null },
+            "liquidezmediadiaria":            { "Item1": null, "Item2": null },
+            "vpa":                            { "Item1": null, "Item2": null },
+            "lpa":                            { "Item1": null, "Item2": null },
+            "valormercado":                   { "Item1": null, "Item2": null }
+        }
+
+    },
+
+    "preFilter": {
+        "dividaliquidaebit": {"min": 0,"max": 3},
+        "liquidezcorrente": {"min": 1.5,"max": null},
+        "roe": {"min": 12,"max": null},
+        "margemliquida": {"min": 8,"max": null},
+        "lucros_cagr5": {"min": 5,"max": null},
+        "p_l": {"min": 2.0,"max": 15},
+        "p_vp": {"min": 0,"max": 2.5},
+        "dy": {"min": 5,"max": null},
+        "liquidezmediadiaria": {"min": 2000000,"max": null}
+    },
+
+    "hardFilter": {
+        "dy": {"avg": {"min": 5, "max": null}},
+        "roe": {"avg": {"min": 0, "max": null}},
+        "dividaliquida_ebitda": {"avg": {"min": 0, "max": 3}}
+    }
+}
